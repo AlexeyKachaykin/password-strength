@@ -1,0 +1,10 @@
+
+
+<div>
+  <label for="passwordInput">Enter Password:</label>
+  <input type="password" id="passwordInput" [formControl]="passwordControl" (input)="checkPasswordStrength()">
+  <div for="passwordInput">Password strength:</div>
+  <div [ngStyle]="{'color': section1Color}" >Weak</div>
+  <div [ngStyle]="{'color': section2Color}" >Medium</div>
+  <div [ngStyle]="{'color': section3Color}" >Strong</div>
+</div>
